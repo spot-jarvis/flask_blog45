@@ -4,6 +4,13 @@ Home
 {%endblock%}
 
 {%block content%}
+{% for post in posts%}
+<h1>{{post.title}}</h1>
+<p>{{post.author}}</p>
+<p>{{post.content}}</p>
+<br>
+<p>{{post.date_post}}</p>
+{%endfor%}
 <h1>Hey there its the first day of 45 day flask challenge </h1>
 <p>Day 1: jzt checking the basics and all </p>
 {%endblock%}

@@ -3,7 +3,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Flask Blog 45{% endblock %}</title>
+    {% if title %}
+    <title>{{title}}</title>
+    {%else%}
+    <title>nothing impo</title>
+    {%endif%}
 </head>
 <body>
     <nav>
